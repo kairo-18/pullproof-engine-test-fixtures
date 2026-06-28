@@ -2,4 +2,5 @@ version: 1
 services:
   web:
     path: .
+    start: node server.js
     public: true
