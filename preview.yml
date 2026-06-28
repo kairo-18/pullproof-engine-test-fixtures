@@ -1,0 +1,13 @@
+version: 1
+services:
+  web:
+    path: ./frontend
+    port: 3000
+    public: true
+    env:
+      API_URL: http://api:4000
+
+  api:
+    path: ./backend
+    port: 4000
+    public: false
