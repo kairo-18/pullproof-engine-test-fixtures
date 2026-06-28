@@ -1,0 +1,19 @@
+version: 1
+services:
+  web:
+    path: ./frontend
+    install: npm install
+    build: ""
+    start: npm start
+    port: 3000
+    public: true
+    env:
+      API_URL: http://api:4000
+
+  api:
+    path: ./backend
+    install: npm install
+    build: ""
+    start: npm start
+    port: 4000
+    public: false
