@@ -1,0 +1,6 @@
+version: 1
+services:
+  web:
+    path: .
+    port: 3000
+    public: true
