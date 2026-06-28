@@ -1,0 +1,9 @@
+version: 1
+services:
+  web:
+    path: .
+    install: npm install
+    build: ""
+    start: npm start
+    port: 3000
+    public: true
