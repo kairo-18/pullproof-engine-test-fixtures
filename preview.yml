@@ -1,0 +1,17 @@
+version: 1
+services:
+  web:
+    path: ./notes-app/frontend
+    install: npm install
+    start: npm start
+    port: 3000
+    public: true
+    env:
+      API_URL: http://api:4000
+
+  api:
+    path: ./notes-app/backend
+    install: npm install
+    start: npm start
+    port: 4000
+    public: false
