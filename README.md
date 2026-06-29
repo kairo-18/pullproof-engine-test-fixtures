@@ -17,3 +17,4 @@ PullProof is a QA-focused pull request preview platform that deploys PRs as ephe
 | 5 | `invalid-preview-yml` | FAILED |
 | 6 | `docker-build-failure` | FAILED |
 | 7 | `notes-crud-app` | RUNNING |
+| 8 | `postgres-three-tier` | RUNNING |
