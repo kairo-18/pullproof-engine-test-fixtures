@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>PullProof Three-Tier Fixture</title></head>
+<body>
+  <h1>PullProof Three-Tier Fixture</h1>
+  <h2>Health Check</h2>
+  <pre id="health-result">Loading...</pre>
+  <h2>API URL</h2>
+  <pre id="api-url">${REACT_APP_API_URL}</pre>
+  <script>
+    fetch('/api/health')
+      .then(r => r.json())
+      .then(data => { document.getElementById('health-result').textContent = JSON.stringify(data, null, 2); })
+      .catch(err => { document.getElementById('health-result').textContent = 'Error: ' + err.message; });
+  </script>
+</body>
+</html>
